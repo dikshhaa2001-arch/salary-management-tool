@@ -36,7 +36,7 @@ gem "image_processing", "~> 1.2"
 # gem "rack-cors"
 
 group :development, :test do
-  gem 'factory_bot_rails'
+  gem "factory_bot_rails"
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
 
@@ -49,4 +49,8 @@ group :development, :test do
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
 end
-gem 'rspec-rails'
+group :development do
+  gem "rubocop"
+end
+gem "rspec-rails"
+gem "rack-cors"

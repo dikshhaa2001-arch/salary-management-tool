@@ -11,8 +11,8 @@ records = []
   records << {
     first_name: first,
     last_name: last,
-    job_title: ["Engineer", "Manager", "HR"].sample,
-    country: ["India", "USA", "UK"].sample,
+    job_title: [ "Engineer", "Manager", "HR" ].sample,
+    country: [ "India", "USA", "UK" ].sample,
     salary: rand(30000..150000),
     email: "#{first.downcase}.#{last.downcase}#{i}@example.com", # ✅ unique
     created_at: Time.current,
